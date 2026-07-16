@@ -1,0 +1,44 @@
+# 『인공지능 개론』 도해 공통 Matplotlib 스타일
+# 근거: 표준_장_템플릿.md §5.1 도해 스타일 통일 기준 (v1.3)
+# 사용: plt.style.use('assets/figures/_style/textbook.mplstyle')
+# 기준 변경은 @director 승인 사항 — 임의 수정 금지
+
+# ── 한글 폰트: 고딕 1종 (가안 Noto Sans KR, 조판 서체 확정 시 교체) ──
+# 뒤 항목은 환경별 폴백: macOS(Apple SD Gothic Neo), Colab(NanumGothic)
+font.family: sans-serif
+font.sans-serif: Noto Sans KR, Apple SD Gothic Neo, NanumGothic, sans-serif
+axes.unicode_minus: False
+
+# ── 글자 크기 3단계: 제목 11 / 본문 9 / 주석·눈금 8 (최소 8pt 확보) ──
+font.size: 9
+axes.titlesize: 11
+axes.labelsize: 9
+xtick.labelsize: 8
+ytick.labelsize: 8
+legend.fontsize: 8
+figure.titlesize: 11
+
+# ── 선 굵기 3단계: 기본 1.2 / 강조 2.4 / 보조(점선) 1.0 ──
+# 강조는 굵기(linewidth=2.4)로, 참조·생략은 점선(linestyle='--')으로 표현
+lines.linewidth: 1.2
+axes.linewidth: 0.8
+grid.linewidth: 0.5
+
+# ── 흑백 대비: 회색조 4단계 + 선형 병용 (색만으로 정보 구분 금지) ──
+# 계열 구분이 명도+선형 이중으로 이뤄져 회색조 변환을 자동 통과한다
+axes.prop_cycle: cycler('color', ['000000', '4d4d4d', '9e9e9e', 'c8c8c8']) + cycler('linestyle', ['-', '--', '-.', ':'])
+image.cmap: gray
+
+# ── 배경·격자 ──
+figure.facecolor: white
+axes.facecolor: white
+savefig.facecolor: white
+axes.grid: True
+grid.color: d9d9d9
+grid.linestyle: -
+
+# ── 출력: 벡터(SVG) 원본 + 조판용 300dpi PNG ──
+figure.dpi: 100
+savefig.dpi: 300
+savefig.bbox: tight
+svg.fonttype: none
