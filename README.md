@@ -25,32 +25,32 @@
 
 | 실습 | 노트북 | 환경 | Colab |
 |---|---|---|---|
-| 3-1 미로 탐색 — BFS/DFS | `ch03/lab-03-01_maze-search.ipynb` | CPU | 〔배지〕 |
-| 3-2 8-퍼즐 A* | `ch03/lab-03-02_eight-puzzle-astar.ipynb` | CPU | 〔배지〕 |
-| 4-1 전방 연쇄 추론 엔진 | `ch04/lab-04-01_forward-chaining.ipynb` | CPU | 〔배지〕 |
-| 5-1 나이브 베이즈 스팸 분류 | `ch05/lab-05-01_naive-bayes-spam.ipynb` | CPU | 〔배지〕 |
-| 6-1 과적합 시각화 | `ch06/lab-06-01_overfitting-curves.ipynb` | CPU | 〔배지〕 |
-| 7-1 붓꽃 분류 4종 비교 | `ch07/lab-07-01_iris-classifiers.ipynb` | CPU | 〔배지〕 |
-| 8-1 k-평균 고객 세분화 | `ch08/lab-08-01_kmeans-customers.ipynb` | CPU | 〔배지〕 |
-| 8-2 PCA로 MNIST 시각화 | `ch08/lab-08-02_pca-mnist.ipynb` | CPU | 〔배지〕 |
-| 9-1 퍼셉트론과 XOR | `ch09/lab-09-01_perceptron-xor.ipynb` | CPU | 〔배지〕 |
-| 9-2 Keras MNIST 드롭아웃 | `ch09/lab-09-02_keras-mnist.ipynb` | GPU 권장 | 〔배지〕 |
-| 10-1 CNN CIFAR-10 | `ch10/lab-10-01_cnn-cifar10.ipynb` | GPU 권장 | 〔배지〕 |
-| 10-2 전이학습 | `ch10/lab-10-02_transfer-learning.ipynb` | GPU 권장 | 〔배지〕 |
-| 10-3 확산 모델 체험 † | `ch10/lab-10-03_diffusion-demo.ipynb` | GPU 권장 | 〔배지〕 |
-| 11-1 LSTM 긴 문맥·기울기 | `ch11/lab-11-01_lstm-long-context.ipynb` | CPU | 〔배지〕 |
-| 11-2 어텐션 히트맵 | `ch11/lab-11-02_attention-heatmap.ipynb` | CPU | 〔배지〕 |
-| 12-1 HF NLP 파이프라인 | `ch12/lab-12-01_hf-pipeline.ipynb` | CPU | 〔배지〕 |
-| 12-2 프롬프트 Before/After | `ch12/lab-12-02_prompt-before-after.ipynb` | GPU 권장 | 〔배지〕 |
-| 12-3 RAG 미니 체험 † | `ch12/lab-12-03_rag-mini.ipynb` | CPU | 〔배지〕 |
-| 13-1 FrozenLake Q-러닝 | `ch13/lab-13-01_frozenlake-qlearning.ipynb` | CPU | 〔배지〕 |
-| 14-1 편향과 공정성 지표 | `ch14/lab-14-01_fairness-metrics.ipynb` | CPU | 〔배지〕 |
+| 3-1 미로 탐색 — BFS/DFS | `ch03/lab-03-01_maze-search.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch03/lab-03-01_maze-search.ipynb) |
+| 3-2 8-퍼즐 A* | `ch03/lab-03-02_eight-puzzle-astar.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch03/lab-03-02_eight-puzzle-astar.ipynb) |
+| 4-1 전방 연쇄 추론 엔진 | `ch04/lab-04-01_forward-chaining.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch04/lab-04-01_forward-chaining.ipynb) |
+| 5-1 나이브 베이즈 스팸 분류 | `ch05/lab-05-01_naive-bayes-spam.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch05/lab-05-01_naive-bayes-spam.ipynb) |
+| 6-1 과적합 시각화 | `ch06/lab-06-01_overfitting-curves.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch06/lab-06-01_overfitting-curves.ipynb) |
+| 7-1 붓꽃 분류 4종 비교 | `ch07/lab-07-01_iris-classifiers.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch07/lab-07-01_iris-classifiers.ipynb) |
+| 8-1 k-평균 고객 세분화 | `ch08/lab-08-01_kmeans-customers.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch08/lab-08-01_kmeans-customers.ipynb) |
+| 8-2 PCA로 MNIST 시각화 | `ch08/lab-08-02_pca-mnist.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch08/lab-08-02_pca-mnist.ipynb) |
+| 9-1 퍼셉트론과 XOR | `ch09/lab-09-01_perceptron-xor.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch09/lab-09-01_perceptron-xor.ipynb) |
+| 9-2 Keras MNIST 드롭아웃 | `ch09/lab-09-02_keras-mnist.ipynb` | GPU 권장 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch09/lab-09-02_keras-mnist.ipynb) |
+| 10-1 CNN CIFAR-10 | `ch10/lab-10-01_cnn-cifar10.ipynb` | GPU 권장 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch10/lab-10-01_cnn-cifar10.ipynb) |
+| 10-2 전이학습 | `ch10/lab-10-02_transfer-learning.ipynb` | GPU 권장 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch10/lab-10-02_transfer-learning.ipynb) |
+| 10-3 확산 모델 체험 † | `ch10/lab-10-03_diffusion-demo.ipynb` | GPU 권장 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch10/lab-10-03_diffusion-demo.ipynb) |
+| 11-1 LSTM 긴 문맥·기울기 | `ch11/lab-11-01_lstm-long-context.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch11/lab-11-01_lstm-long-context.ipynb) |
+| 11-2 어텐션 히트맵 | `ch11/lab-11-02_attention-heatmap.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch11/lab-11-02_attention-heatmap.ipynb) |
+| 12-1 HF NLP 파이프라인 | `ch12/lab-12-01_hf-pipeline.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch12/lab-12-01_hf-pipeline.ipynb) |
+| 12-2 프롬프트 Before/After | `ch12/lab-12-02_prompt-before-after.ipynb` | GPU 권장 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch12/lab-12-02_prompt-before-after.ipynb) |
+| 12-3 RAG 미니 체험 † | `ch12/lab-12-03_rag-mini.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch12/lab-12-03_rag-mini.ipynb) |
+| 13-1 FrozenLake Q-러닝 | `ch13/lab-13-01_frozenlake-qlearning.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch13/lab-13-01_frozenlake-qlearning.ipynb) |
+| 14-1 편향과 공정성 지표 | `ch14/lab-14-01_fairness-metrics.ipynb` | CPU | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tbgoodlife/ai-labs/blob/main/ch14/lab-14-01_fairness-metrics.ipynb) |
 
 † 표시는 저장소 전용 실습(책 본문에는 안내만 있음)입니다.
 "CPU"인 실습도 GPU에서 더 빨리 돕니다. 12-2의 1순위 경로(무료 웹 챗봇)는
 코드 없이 브라우저만으로 진행합니다 — 책 12.3의 안내를 따르세요.
 
-〔Colab 배지: 저장소 공개 후 `https://colab.research.google.com/github/<계정>/<저장소>/blob/main/<경로>` 형식으로 일괄 치환 — 출고 체크리스트 참조〕
+모든 배지는 `https://github.com/tbgoodlife/ai-labs` 저장소를 가리킵니다.
 
 ## 폴더 구성
 
