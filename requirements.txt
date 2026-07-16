@@ -9,5 +9,6 @@ tensorflow>=2.17
 # 11·12장 (트랜스포머·LLM 실습)
 transformers>=4.44
 torch>=2.4
+sentence-transformers>=3.0  # 12-3 RAG 미니 (임베딩)
 # 13장 (강화학습)
 gymnasium>=1.0
