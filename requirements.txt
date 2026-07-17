@@ -2,6 +2,7 @@
 # 검증 기준 버전 — 상위 호환 허용(하한 표기)
 # 검증 기준 버전: torch 2.4.1 / transformers 4.44.2 / sentence-transformers 3.0.1 / numpy 1.26.4
 #   — 결정론적 출력이 필요한 12-3만 노트북 내 인라인 핀(transformers==4.44.2) 사용
+#   — 12-3 생성 모델: Qwen/Qwen2.5-3B-Instruct (12-2는 1.5B)
 numpy>=1.26  # 검증 기준 1.26.4 (상위 호환 허용)
 matplotlib>=3.9
 scikit-learn>=1.5
