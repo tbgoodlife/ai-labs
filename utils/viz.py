@@ -200,11 +200,17 @@ def plot_qtable(Q, ax=None, title=""):
     return ax
 
 
-def plot_success_curves(runs, window=50, ax=None):
+def plot_success_curves(runs, window=50, ax=None,
+                        labels=None):
     """에피소드 성공 기록(0/1)의 이동 평균 곡선. (13장)
 
-    runs: {라벨: 성공 배열} 딕셔너리
+    runs: {라벨: 성공 배열} 딕셔너리, 또는 성공 배열의
+    튜플/리스트(이때 labels로 라벨 지정)
     """
+    if not hasattr(runs, "items"):
+        names = (labels if labels is not None
+                 else [f"run {i+1}" for i in range(len(runs))])
+        runs = dict(zip(names, runs))
     if ax is None:
         _, ax = plt.subplots(figsize=(5, 3.2))
     styles = ["-", "--", "-."]
@@ -251,4 +257,53 @@ def plot_decision_boundary(model, X, y, ax=None,
                    color=GRAY[3], edgecolor="black",
                    linewidth=0.5, label=f"클래스 {k}")
     ax.set_title(title)
+    return ax
+
+
+def show_samples(x, y, classes, n=10):
+    """클래스 0~n-1의 대표 이미지를 한 줄로 보여준다. (10장)
+
+    x: 이미지 배열 / y: 정수 라벨 / classes: 클래스 이름 목록
+    """
+    y = np.asarray(y).ravel()
+    x = np.asarray(x)
+    fig, axes = plt.subplots(1, n, figsize=(n, 1.4))
+    for d, ax in enumerate(axes):
+        ax.imshow(x[y == d][0])
+        ax.set_title(classes[d], fontsize=8)
+        ax.axis("off")
+    plt.show()
+    return axes
+
+
+def plot_qtable_heatmap(Q_before, Q_after,
+                        titles=("Before", "After")):
+    """Before/After 두 Q-테이블 히트맵을 나란히 그린다. (13장)
+
+    plot_qtable()의 지면 호출명 래퍼 — 두 수첩을 한 그림에.
+    """
+    fig, axes = plt.subplots(1, 2, figsize=(7.4, 3.6))
+    for Q, ax, t in zip((Q_before, Q_after), axes, titles):
+        plot_qtable(Q, ax=ax, title=t)
+    plt.tight_layout()
+    plt.show()
+    return axes
+
+
+def plot_group_rates(rate, title=""):
+    """집단별 비율 막대 그래프. (14장)
+
+    rate: pandas Series — 인덱스가 집단 이름, 값이 비율
+    """
+    fig, ax = plt.subplots(figsize=(3.6, 3.0))
+    ax.bar([str(i) for i in rate.index],
+           np.asarray(rate, dtype=float),
+           color=[GRAY[3], "#404040"], width=0.6)
+    for i, v in enumerate(np.asarray(rate, dtype=float)):
+        ax.text(i, v + 0.008, f"{v:.1%}",
+                ha="center", fontsize=9)
+    ax.set_ylabel("비율")
+    ax.set_title(title)
+    plt.tight_layout()
+    plt.show()
     return ax
